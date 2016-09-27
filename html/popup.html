@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/override.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+    <script src="../vendor/jquery/3.1.0.min.js"></script>
+    <script src="../vendor/jquery/plugin/jquery.validate.min.js"></script>
+    <script src="../vendor/jquery/plugin/jquery.validate.additional-methods.min.js"></script>
+    <script src="../js/analytics.js"></script>
+  </head>
+  <body tabindex="1">
+    <div class="container-fluid">
+      <form id="setting-form">
+        <div class="form-group form-group-sm">
+          <label class="">GitLabのトップページURL</label>
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="text" name="url" value="" placeholder="https://www.gitlab.com" size="30" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="">GitLabのバージョン</label>
+          <div class="row">
+            <div class="col-xs-3">
+              <select name="version" class="form-control input-sm">
+               <option value="7.9">7.9</option>
+               <option value="8.11">8.11</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="allDisabled" value="1" />自分のMergeRequest以外は<strong>全てDisabled</strong>とする</label>
+        </div>
+        <div class="center-block submit-button-block">
+          <button type="submit" class="btn btn-primary btn-xs btn-block">Save</button>
+        </div>
+      </form>
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+        <div class="navbar-header pull-right">
+          <a class="navbar-brand" href="#">GitLab MergeButton Control</a>
+          <span class="label label-info labelEx">ver&nbsp;<span class="version">0.0.0</span></span>
+        </div>
+      </div>
+    </nav>
+    <script src="../js/popup.js"></script>
+  </body>
+</html>

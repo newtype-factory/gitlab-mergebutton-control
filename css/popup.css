@@ -1,0 +1,16 @@
+.labelEx {
+    float: left;
+    margin: 7px 8px 8px;
+    font-size: 8px;
+}
+
+.submit-button-block {
+    max-width: 100px;
+}
+
+.error-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 8px;
+    line-height: 16px;
+}

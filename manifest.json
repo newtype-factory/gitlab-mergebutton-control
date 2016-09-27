@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "GitLab MergeButton Control",
+  "version": "0.0.1",
+  "description": "GitLabのマージリクエストのページで、LGTM(もしくは+1)が出ていない場合に、Accept Merge Requestボタンをdisabledにすることができます。",
+  "icons": {
+    "16": "img/good-icon16.png",
+    "48": "img/good-icon48.png",
+    "128": "img/good-icon128.png"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["vendor/jquery/3.1.0.min.js", "js/gitlab.js", "js/contents.js"]
+  }],
+  "browser_action": {
+    "default_icon": {
+      "19": "img/good-icon19.png",
+      "38": "img/good-icon38.png"
+    },
+    "default_title": "GitLab MergeButton Control",
+    "default_popup": "html/popup.html"
+  },
+  "options_ui": {
+    "page": "html/popup.html",
+    "chrome_style": true,
+    "open_in_tab": false
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "html/noLGTM.html",
+    "html/notAuthor.html"
+  ],
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'"
+}

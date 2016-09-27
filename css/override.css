@@ -1,0 +1,58 @@
+body {
+    padding-bottom: 42px;
+}
+
+label {
+    font-size: 11px;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.checkbox {
+    margin-top: 0;
+}
+
+.checkbox input[type=checkbox] {
+    position: relative;
+    top: -3px;
+    font-size: 10px;
+    margin-right: 7px;
+}
+
+select.input-sm {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.navbar {
+    min-height: 30px !important;
+}
+
+.navbar-brand {
+    float: left;
+    height: 30px;
+    padding: 10px 5px;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.alert {
+    padding: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.glyphicon {
+    top: 3px;
+}
