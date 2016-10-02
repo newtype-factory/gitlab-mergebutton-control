@@ -53,7 +53,8 @@ function insertConfirmScript() {
   var $form = GitLab.getMergeFormElement();
 
   if ($form.length > 0) {
-    $form.submit(function() {
+    $form.off("submit");
+    $form.on("submit", function() {
       if (!confirm("マージします。よろしいですか？")) {
         GitLab.mergeCancel();
         return false;
