@@ -30,10 +30,9 @@ function injectScriptFile(tabId, filePath) {
     chrome.tabs.sendMessage(tabId, {name: "hasGitlabClass"}, null, function(response) {
       // jsのinject
       if (response && !response.gitlabClass) {
-        chrome.tabs.executeScript(tabId, {file: filePath}, function() {
-          resolve();
-        });
+        chrome.tabs.executeScript(tabId, {file: filePath});
       }
+      resolve();
     });
   });
 }
