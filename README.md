@@ -19,7 +19,7 @@ Accept Merge Requestボタンをdisabledにすることができます。
 
 ## インストール
 
-[Chrome ウェブストア](https://chrome.google.com/webstore/category/apps?hl=ja)からブラウザに追加して下さい。
+[Chrome ウェブストア](https://chrome.google.com/webstore/detail/gitlab-mergebutton-contro/dmcadhlpdoobjippmpbpbipofobadoip?hl=ja)からブラウザに追加して下さい。
 
 ## Author
 
