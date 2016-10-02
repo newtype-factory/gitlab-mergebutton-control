@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "GitLab MergeButton Control",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GitLabのマージリクエストのページで、LGTM(もしくは+1)が出ていない場合に、Accept Merge Requestボタンをdisabledにすることができます。",
   "icons": {
     "16": "img/good-icon16.png",
